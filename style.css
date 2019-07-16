@@ -1,0 +1,46 @@
+html{
+  font-family: Georgia, serif;
+  color: #102246;
+}
+
+h1{
+  font-family: 'Merriweather';
+  text-align: center;
+  margin: 20px auto 0 auto;
+}
+
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.photo-of-me{
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  align-items: center;
+}
+
+.nav-bar{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-bar li{
+  display: inline;
+}
+
+.nav-bar a{
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #D77771;
+}
