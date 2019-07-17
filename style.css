@@ -25,6 +25,7 @@ h2{
   margin: 50px auto 0px auto;
 }
 
+/* increase top margin for first line of text*/
 h2.first-paragraph{
   font-family: 'Merriweather';
   font-size: 20px;
@@ -47,9 +48,9 @@ p{
   margin: 25px auto;
   font-size: 16px;
   color: grey;
-  /* line-height: 18px; */
 }
 
+/* display a circular, centered image of me */
 .image-cropper {
     width: 200px;
     height: 200px;
@@ -68,36 +69,32 @@ p{
   align-items: center;
 }
 
-.nav-bar{
+/* display both nav bars horizontally */
+.nav-bar-1, .nav-bar-2{
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.nav-bar li{
+.nav-bar-1 li, .nav-bar-2 li{
   display: inline;
 }
 
-.nav-bar a{
+.nav-bar-1 a, .nav-bar-2 a{
   display: inline-block;
   padding: 5px 20px;
   text-decoration: none;
   color: black;
 }
 
-.nav-bar a:hover{
+/* change website navigation links to pink on hover */
+.nav-bar-1 a:hover{
   color: #D77771;
   transition: .25s;
 }
 
-.resume-display{
-  display: block;
-  margin: 50px auto 0px auto;
-  border: none;
-  width: 100%;
-}
-
+/* style links with company colors on hover */
 a.github-link:hover{
   color: #767676;
 }
@@ -112,15 +109,4 @@ a.facebook-link:hover{
 
 a.spotify-link:hover{
   color: #1DB954;
-}
-
-a.my-email{
-    text-decoration: none;
-    color: grey;
-}
-
-a.my-email:hover{
-    text-decoration: none;
-    color: #D77771;
-    transition: .25s;
 }
