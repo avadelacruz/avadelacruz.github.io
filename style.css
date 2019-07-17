@@ -1,12 +1,18 @@
 html{
   font-family: Georgia, serif;
-  color: #102246;
+  color: #073763;
 }
 
 h1{
   font-family: 'Merriweather';
   text-align: center;
   margin: 20px auto 0 auto;
+}
+
+h1:hover{
+  /* color: #D77771; */
+  /* transition: .25s; */
+  cursor: default;
 }
 
 .image-cropper {
@@ -40,7 +46,19 @@ h1{
 
 .nav-bar a{
   display: inline-block;
-  padding: 10px;
+  padding: 10px 20px;
   text-decoration: none;
+  color: black;
+}
+
+.nav-bar a:hover{
   color: #D77771;
+  transition: .25s;
+}
+
+.resume-display{
+  display: block;
+  margin: 0 auto;
+  border: none;
+  width: 75%;
 }
