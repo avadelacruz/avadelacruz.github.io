@@ -3,6 +3,10 @@ html{
   color: #073763;
 }
 
+body{
+  margin: 0 12.5%;
+}
+
 h1{
   font-family: 'Merriweather';
   text-align: center;
@@ -13,6 +17,37 @@ h1:hover{
   /* color: #D77771; */
   /* transition: .25s; */
   cursor: default;
+}
+
+h2{
+  font-family: 'Merriweather';
+  font-size: 20px;
+  margin: 50px auto 0px auto;
+}
+
+h2.first-paragraph{
+  font-family: 'Merriweather';
+  font-size: 20px;
+  margin: 50px auto 0px auto;
+}
+
+.first-paragraph{
+  margin: 50px auto 25px auto;
+}
+
+h3{
+  font: Georgia;
+  font-size: 18px;
+  font-weight: normal;
+  color: black;
+  margin: 5px auto;
+}
+
+p{
+  margin: 25px auto;
+  font-size: 16px;
+  color: grey;
+  /* line-height: 18px; */
 }
 
 .image-cropper {
@@ -58,11 +93,34 @@ h1:hover{
 
 .resume-display{
   display: block;
-  margin: 0 auto;
+  margin: 50px auto 0px auto;
   border: none;
-  width: 75%;
+  width: 100%;
 }
 
-p{
-  margin: 50px 25%;
+a.github-link:hover{
+  color: #767676;
+}
+
+a.linkedin-link:hover{
+  color: #0077B5;
+}
+
+a.facebook-link:hover{
+  color: #3C5A99;
+}
+
+a.spotify-link:hover{
+  color: #1DB954;
+}
+
+a.my-email{
+    text-decoration: none;
+    color: grey;
+}
+
+a.my-email:hover{
+    text-decoration: none;
+    color: #D77771;
+    transition: .25s;
 }
