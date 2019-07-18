@@ -13,10 +13,14 @@ h1{
   margin: 20px auto 10px auto;
 }
 
-h1:hover{
-  /* color: #D77771; */
-  /* transition: .25s; */
-  cursor: default;
+h1 a{
+  color: #073763;
+  text-decoration: none;
+}
+
+h1 a:hover{
+  color: #D77771;
+  transition: .25s;
 }
 
 h2{
@@ -97,16 +101,20 @@ p{
 /* style links with company colors on hover */
 a.github-link:hover{
   color: #767676;
+  transition: .25s;
 }
 
 a.linkedin-link:hover{
   color: #0077B5;
+  transition: .25s;
 }
 
 a.facebook-link:hover{
   color: #3C5A99;
+  transition: .25s;
 }
 
 a.spotify-link:hover{
   color: #1DB954;
+  transition: .25s;
 }
