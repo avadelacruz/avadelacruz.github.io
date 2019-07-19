@@ -54,6 +54,11 @@ p{
   color: grey;
 }
 
+a{
+  text-decoration: none;
+  color: #D77771;
+}
+
 /* display a circular, centered image of me */
 .image-cropper {
     width: 200px;
