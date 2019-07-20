@@ -123,3 +123,19 @@ a.spotify-link:hover{
   color: #1DB954;
   transition: .25s;
 }
+
+
+/*  for projects page  */
+.video-description{
+  margin-left: 0;
+}
+
+.left-post{
+  width: 50%;
+  float: left;
+}
+
+.right-post{
+  width: 50%;
+  float: right;
+}
