@@ -99,33 +99,33 @@ a{
 
 /* change website navigation links to pink on hover */
 .nav-bar-1 a:hover{
-  color: #D77771;
+  color: #D77771 !important;;
   transition: .25s;
 }
 
 /* style links with company colors on hover */
 a.github-link:hover{
-  color: #767676;
+  color: #767676 !important;;
   transition: .25s;
 }
 
 a.linkedin-link:hover{
-  color: #0077B5;
+  color: #0077B5 !important;;
   transition: .25s;
 }
 
 a.facebook-link:hover{
-  color: #3C5A99;
+  color: #3C5A99 !important;;
   transition: .25s;
 }
 
 a.twitter-link:hover{
-  color: #00aced;
+  color: #00aced !important;;
   transition: .25s;
 }
 
 a.spotify-link:hover{
-  color: #1DB954;
+  color: #1DB954 !important;
   transition: .25s;
 }
 
