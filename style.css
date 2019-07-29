@@ -124,6 +124,12 @@ a.twitter-link:hover{
   transition: .25s;
 }
 
+a.spotify-link:hover{
+  color: #1DB954;
+  transition: .25s;
+}
+
+
 
 /*  for projects page  */
 .video-description{
