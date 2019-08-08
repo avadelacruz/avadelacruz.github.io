@@ -55,8 +55,8 @@ p{
 }
 
 a{
-  text-decoration: none;
-  color: #D77771;
+  text-decoration: underline;
+  color: grey;
 }
 
 /* display a circular, centered image of me */
@@ -144,4 +144,13 @@ a.spotify-link:hover{
 .right-post{
   width: 50%;
   float: right;
+}
+
+.project-picture{
+  width: 250px;
+  /* float: right; */
+}
+
+.project-description{
+  /* visibility: hidden; */
 }
