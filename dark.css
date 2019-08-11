@@ -19,7 +19,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #709bb5;
+  background-color: #073763;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -37,12 +37,12 @@
 }
 
 input:checked + .slider {
-  background-color: #073763;
+  background-color: #709bb5;
 
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #073763;
+  box-shadow: 0 0 1px #709bb5;
 }
 
 input:checked + .slider:before {
@@ -81,7 +81,7 @@ h1{
 }
 
 h1 a{
-  color: #709bb5;
+  color: #95b6c9;
   text-decoration: none;
 }
 
@@ -94,7 +94,7 @@ h2{
   font-family: 'Merriweather';
   font-size: 20px;
   margin: 50px auto 0px auto;
-  color: #709bb5;
+  color: #95b6c9;
 }
 
 /* increase top margin for first line of text*/
@@ -112,7 +112,7 @@ h3{
   font: Georgia;
   font-size: 18px;
   font-weight: normal;
-  color: #dae5f0;
+  color: white;
   margin: 5px auto;
 }
 
