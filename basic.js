@@ -1,7 +1,9 @@
 var links;
+var lightModeOn;
 
 // on page load
 $(function(){
+  //set active link color for current page
   var navbar = document.getElementById("site-nav-bar");
   links = navbar.getElementsByTagName("li");
   // alert(window.location.pathname);
@@ -12,22 +14,24 @@ $(function(){
       $(this).css("color", "#D77771");
     }
     else{
-      $(this).css("color", "black");
+      // $(this).css("color", "black");
     }
   });
-
 });
 
 
-
-
-// $("#site-nav-bar").click(function(){
-//
-//   // for(var i=0; i<links.length; i++){
-//     // $(this).html("hi");
-//
-//
-//
-//   }
-//
-// });
+$("#slider").change(function(){
+  //slider will default to checked, but on first change will be unchecked
+  //box goes from checked->unchecked as user goes from light->dark mode
+  darkModeOn = this.checked;
+  if(darkModeOn){
+    //turn on light mode
+    document.getElementById("light-css").disabled = false;
+    document.getElementById("dark-css").disabled = true;
+  }
+  else{
+    //turn on dark mode
+    document.getElementById("light-css").disabled = true;
+    document.getElementById("dark-css").disabled = false;
+  }
+})

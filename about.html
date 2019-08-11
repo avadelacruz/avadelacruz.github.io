@@ -5,56 +5,65 @@
 		<link rel="icon" href="avatar.png" type="image/x-icon">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="light.css" id="light-css" title="light-css"/>
+		<link rel="alternate stylesheet" type="text/css" href="dark.css" id="dark-css" title="dark-css" disabled>
 		<!-- jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<title>Ava's Website</title>
 	</head>
 	<body>
-		<div class="image-cropper">
-			<img src="Ava.jpeg" alt="photo of me" class="photo-of-me" />
+		<div class="top-bar">
+			<label class="switch">
+		  	<input type="checkbox" id="slider" checked>
+		  	<span class="slider round"></span>
+			</label>
 		</div>
-		<h1><a href="index.html">AVA DELACRUZ</a></h1>
-		<!-- would be cool to have theme change on name click -->
-		<!-- switch stylesheet, resume img, pic of me for new theme -->
-		<ul class="nav-bar-1" id="site-nav-bar">
-			<li><a href="about.html">About</a></li>
-			<li><a href="resume.html">Resume</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="news.html">News</a></li>
-			<li><a href="hobbies.html">Hobbies</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-		<ul class="nav-bar-2">
-			<li><a href="https://github.com/AvaDeLaCruz" target="_blank" class="github-link">GitHub</a></li>
-			<li><a href="https://www.linkedin.com/in/ava-delacruz/" target="_blank" class="linkedin-link">LinkedIn</a></li>
-			<li><a href="https://www.facebook.com/people/Ava-De-La-Cruz/100010405683762" target="_blank" class="facebook-link">Facebook</a></li>
-			<li><a href="https://twitter.com/avadlc" target="_blank" class="twitter-link">Twitter</a></li>
-			<li><a href="https://open.spotify.com/user/goaliegirl333dlc?si=h1vnB1RhSR-5GSV3aX1ArQ
-			" target="_blank" class="spotify-link">Spotify</a></li>
-		</ul>
-		<h2  class="first-paragraph">	HI, I'M AVA.</h2>
-		<h3>I'm passionate about learning, encouraging diversity in tech through STEM education, and creating projects which help people.</h3>
-		<p>
-			By the end of my sophomore year of high school, I had already exhausted all of the advanced Computer Science classes at my school. During my junior year,
-			I realized I had only two courses left to take in order to graduate: English and Gym. It was then that my love of learning pushed me to apply for college a year early;
-			this way, I could continue to challenge myself academically and learn about what I love: Computer Science.
-			Now, I am a rising sophomore at the University of Southern California pursuing my Bachelor's degree in Computer Science.
-		</p>
-		<p>
-			At USC, I serve as the Director of Service for our Women in Computing organization.
-			I am responsible for developing, organizing, and leading Computer Science outreach efforts, such as coding events, throughout the year.
-			Through this role, I am able to combine my love for teaching with my love for Computer Science,
-			all while working to encourage members of communities that are underrepresented in tech to pursue computing-related careers.
-		</p>
-		<p>
-			This summer, I'm working at Amazon in Seattle, WA as a Software Development Engineer Intern through the Amazon Future Engineer program.
-			I'm currently developing a full-stack web application which will facilitate meeting scheduling between Amazon SDEs and the Amazon API Governance Body,
-			the group which approves code changes that directly affect Amazon.com. I love going to work every day because I know that what I'm building will help
-			many other people by ultimately making it easier for engineers to ship code which improves the shopping experience for our customers.
-		</p>
-		<p>
-			Feel free to reach out to me, either by <a href="https://www.linkedin.com/in/ava-delacruz/" target="_blank">LinkedIn</a> or <a href="contact.html">email</a>, about Software Engineering Internships in NYC, Boston, DC, or London for Summer 2020.
+		<div class="website-body">
+			<div class="image-cropper">
+				<img src="Ava.jpeg" alt="photo of me" class="photo-of-me" />
+			</div>
+			<h1><a href="index.html">AVA DELACRUZ</a></h1>
+			<!-- would be cool to have theme change on name click -->
+			<!-- switch stylesheet, resume img, pic of me for new theme -->
+			<ul class="nav-bar-1" id="site-nav-bar">
+				<li><a href="about.html">About</a></li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<ul class="nav-bar-2">
+				<li><a href="https://github.com/AvaDeLaCruz" target="_blank" class="github-link">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/ava-delacruz/" target="_blank" class="linkedin-link">LinkedIn</a></li>
+				<li><a href="https://www.facebook.com/people/Ava-De-La-Cruz/100010405683762" target="_blank" class="facebook-link">Facebook</a></li>
+				<li><a href="https://twitter.com/avadlc" target="_blank" class="twitter-link">Twitter</a></li>
+				<li><a href="https://open.spotify.com/user/goaliegirl333dlc?si=h1vnB1RhSR-5GSV3aX1ArQ
+				" target="_blank" class="spotify-link">Spotify</a></li>
+			</ul>
+			<h2  class="first-paragraph">	HI, I'M AVA.</h2>
+			<h3>I'm passionate about learning, encouraging diversity in tech through STEM education, and creating projects which help people.</h3>
+			<p>
+				By the end of my sophomore year of high school, I had already exhausted all of the advanced Computer Science classes at my school. During my junior year,
+				I realized I had only two courses left to take in order to graduate: English and Gym. It was then that my love of learning pushed me to apply for college a year early;
+				this way, I could continue to challenge myself academically and learn about what I love: Computer Science.
+				Now, I am a rising sophomore at the University of Southern California pursuing my Bachelor's degree in Computer Science.
+			</p>
+			<p>
+				At USC, I serve as the Director of Service for our Women in Computing organization.
+				I am responsible for developing, organizing, and leading Computer Science outreach efforts, such as coding events, throughout the year.
+				Through this role, I am able to combine my love for teaching with my love for Computer Science,
+				all while working to encourage members of communities that are underrepresented in tech to pursue computing-related careers.
+			</p>
+			<p>
+				This summer, I'm working at Amazon in Seattle, WA as a Software Development Engineer Intern through the Amazon Future Engineer program.
+				I'm currently developing a full-stack web application which will facilitate meeting scheduling between Amazon SDEs and the Amazon API Governance Body,
+				the group which approves code changes that directly affect Amazon.com. I love going to work every day because I know that what I'm building will help
+				many other people by ultimately making it easier for engineers to ship code which improves the shopping experience for our customers.
+			</p>
+			<p>
+				Feel free to reach out to me, either by <a href="https://www.linkedin.com/in/ava-delacruz/" target="_blank">LinkedIn</a> or <a href="contact.html">email</a>, about Software Engineering Internships in NYC, Boston, DC, or London for Summer 2020.
+		</div>
 
 		<!-- incorporate basic js functionality -->
 		<script src="basic.js" charset="utf-8"></script>

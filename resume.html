@@ -5,37 +5,51 @@
 		<link rel="icon" href="avatar.png" type="image/x-icon">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="light.css" id="light-css" title="light-css"/>
+		<link rel="alternate stylesheet" type="text/css" href="dark.css" id="dark-css" title="dark-css" disabled>
 		<link rel="stylesheet" type="text/css" href="resume.css" />
 		<!-- jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<title>Ava's Website</title>
 	</head>
 	<body>
-		<div class="image-cropper">
-			<img src="Ava.jpeg" alt="photo of me" class="photo-of-me" />
+		<div class="top-bar">
+			<label class="switch">
+		  	<input type="checkbox" id="slider" checked>
+		  	<span class="slider round"></span>
+			</label>
 		</div>
-    <h1><a href="index.html">AVA DELACRUZ</a></h1>
-		<ul class="nav-bar-1" id="site-nav-bar">
-			<li><a href="about.html">About</a></li>
-			<li><a href="resume.html">Resume</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="news.html">News</a></li>
-			<li><a href="hobbies.html">Hobbies</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-		<ul class="nav-bar-2">
-			<li><a href="https://github.com/AvaDeLaCruz" target="_blank" class="github-link">GitHub</a></li>
-			<li><a href="https://www.linkedin.com/in/ava-delacruz/" target="_blank" class="linkedin-link">LinkedIn</a></li>
-			<li><a href="https://www.facebook.com/people/Ava-De-La-Cruz/100010405683762" target="_blank" class="facebook-link">Facebook</a></li>
-			<li><a href="https://twitter.com/avadlc" target="_blank" class="twitter-link">Twitter</a></li>
-			<li><a href="https://open.spotify.com/user/goaliegirl333dlc?si=h1vnB1RhSR-5GSV3aX1ArQ
-			" target="_blank" class="spotify-link">Spotify</a></li>
-		</ul>
-		<h2 class="first-paragraph">RÉSUMÉ</h2>
-		<h3>Thank you for taking the time to review my resume.</h3>
-		<p>For the downloadable PDF version, click <a href="DeLaCruz_Ava.pdf" download>here</a>.</p>
-    <img class="resume-display" src="DeLaCruz_Ava.jpeg" alt="My Resume">
+		<div class="website-body">
+			<div class="image-cropper">
+				<img src="Ava.jpeg" alt="photo of me" class="photo-of-me" />
+			</div>
+			<h1><a href="index.html">AVA DELACRUZ</a></h1>
+			<!-- would be cool to have theme change on name click -->
+			<!-- switch stylesheet, resume img, pic of me for new theme -->
+			<ul class="nav-bar-1" id="site-nav-bar">
+				<li><a href="about.html">About</a></li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<ul class="nav-bar-2">
+				<li><a href="https://github.com/AvaDeLaCruz" target="_blank" class="github-link">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/ava-delacruz/" target="_blank" class="linkedin-link">LinkedIn</a></li>
+				<li><a href="https://www.facebook.com/people/Ava-De-La-Cruz/100010405683762" target="_blank" class="facebook-link">Facebook</a></li>
+				<li><a href="https://twitter.com/avadlc" target="_blank" class="twitter-link">Twitter</a></li>
+				<li><a href="https://open.spotify.com/user/goaliegirl333dlc?si=h1vnB1RhSR-5GSV3aX1ArQ
+				" target="_blank" class="spotify-link">Spotify</a></li>
+			</ul>
+
+			<h2 class="first-paragraph">RÉSUMÉ</h2>
+			<h3>Thank you for taking the time to review my resume.</h3>
+			<p>For the downloadable PDF version, click <a href="DeLaCruz_Ava.pdf" download>here</a>.</p>
+	    <img class="resume-display" src="DeLaCruz_Ava.jpeg" alt="My Resume">
+
+		</div>
+
 		<!-- incorporate basic js functionality -->
 		<script src="basic.js" charset="utf-8"></script>
 

@@ -1,0 +1,224 @@
+.switch {
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #709bb5;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #D77771;
+
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #D77771;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.website-body{
+  margin: 0 12.5%;
+}
+
+html{
+  font-family: Georgia, serif;
+  color: #7caccf;
+  background-color: #141d26;
+}
+
+body{
+  color: white;
+}
+
+h1{
+  font-family: 'Merriweather';
+  text-align: center;
+  margin: 20px auto 10px auto;
+}
+
+h1 a{
+  color: #709bb5;
+  text-decoration: none;
+}
+
+h1 a:hover{
+  color: #f0a39e;
+  transition: .25s;
+}
+
+h2{
+  font-family: 'Merriweather';
+  font-size: 20px;
+  margin: 50px auto 0px auto;
+  color: #709bb5;
+}
+
+/* increase top margin for first line of text*/
+h2.first-paragraph{
+  font-family: 'Merriweather';
+  font-size: 20px;
+  margin: 50px auto 0px auto;
+}
+
+.first-paragraph{
+  margin: 50px auto 25px auto;
+}
+
+h3{
+  font: Georgia;
+  font-size: 18px;
+  font-weight: normal;
+  color: #dae5f0;
+  margin: 5px auto;
+}
+
+p{
+  margin: 25px auto;
+  font-size: 16px;
+  color: #b5bec7;
+}
+
+a{
+  text-decoration: underline;
+  color: #b5bec7;
+}
+
+/* display a circular, centered image of me */
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.photo-of-me{
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  align-items: center;
+}
+
+/* display both nav bars horizontally */
+.nav-bar-1, .nav-bar-2{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-bar-1 li, .nav-bar-2 li{
+  display: inline;
+}
+
+.nav-bar-1 a, .nav-bar-2 a{
+  display: inline-block;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+/* change website navigation links to pink on hover */
+.nav-bar-1 a:hover{
+  color: #f0a39e !important;
+  transition: .25s;
+}
+
+/* style links with company colors on hover */
+a.github-link:hover{
+  color: #767676 !important;;
+  transition: .25s;
+}
+
+a.linkedin-link:hover{
+  color: #0077B5 !important;;
+  transition: .25s;
+}
+
+a.facebook-link:hover{
+  color: #3C5A99 !important;;
+  transition: .25s;
+}
+
+a.twitter-link:hover{
+  color: #00aced !important;;
+  transition: .25s;
+}
+
+a.spotify-link:hover{
+  color: #1DB954 !important;
+  transition: .25s;
+}
+
+
+
+/*  for projects page  */
+.video-description{
+  margin-left: 0;
+}
+
+.left-post{
+  width: 50%;
+  float: left;
+}
+
+.right-post{
+  width: 50%;
+  float: right;
+}
+
+.project-picture{
+  width: 250px;
+  /* float: right; */
+}
+
+.project-description{
+  /* visibility: hidden; */
+}

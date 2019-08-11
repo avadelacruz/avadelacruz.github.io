@@ -5,53 +5,60 @@
 		<link rel="icon" href="avatar.png" type="image/x-icon">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="light.css" id="light-css" title="light-css"/>
+		<link rel="alternate stylesheet" type="text/css" href="dark.css" id="dark-css" title="dark-css" disabled>
 		<!-- jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<title>Ava's Website</title>
 	</head>
 	<body>
-		<div class="image-cropper">
-			<img src="Ava.jpeg" alt="photo of me" class="photo-of-me" />
+		<div class="top-bar">
+			<label class="switch">
+				<input type="checkbox" id="slider" checked>
+				<span class="slider round"></span>
+			</label>
 		</div>
-		<h1><a href="index.html">AVA DELACRUZ</a></h1>
-		<!-- would be cool to have theme change on name click -->
-		<!-- switch stylesheet, resume img, pic of me for new theme -->
-		<ul class="nav-bar-1" id="site-nav-bar">
-			<li><a href="about.html">About</a></li>
-			<li><a href="resume.html">Resume</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="news.html">News</a></li>
-			<li><a href="hobbies.html">Hobbies</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-		<ul class="nav-bar-2">
-			<li><a href="https://github.com/AvaDeLaCruz" target="_blank" class="github-link">GitHub</a></li>
-			<li><a href="https://www.linkedin.com/in/ava-delacruz/" target="_blank" class="linkedin-link">LinkedIn</a></li>
-			<li><a href="https://www.facebook.com/people/Ava-De-La-Cruz/100010405683762" target="_blank" class="facebook-link">Facebook</a></li>
-			<li><a href="https://twitter.com/avadlc" target="_blank" class="twitter-link">Twitter</a></li>
-			<li><a href="https://open.spotify.com/user/goaliegirl333dlc?si=h1vnB1RhSR-5GSV3aX1ArQ
-			" target="_blank" class="spotify-link">Spotify</a></li>
-		</ul>
+		<div class="website-body">
+			<div class="image-cropper">
+				<img src="Ava.jpeg" alt="photo of me" class="photo-of-me" />
+			</div>
+			<h1><a href="index.html">AVA DELACRUZ</a></h1>
+			<!-- would be cool to have theme change on name click -->
+			<!-- switch stylesheet, resume img, pic of me for new theme -->
+			<ul class="nav-bar-1" id="site-nav-bar">
+				<li><a href="about.html">About</a></li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<ul class="nav-bar-2">
+				<li><a href="https://github.com/AvaDeLaCruz" target="_blank" class="github-link">GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/ava-delacruz/" target="_blank" class="linkedin-link">LinkedIn</a></li>
+				<li><a href="https://www.facebook.com/people/Ava-De-La-Cruz/100010405683762" target="_blank" class="facebook-link">Facebook</a></li>
+				<li><a href="https://twitter.com/avadlc" target="_blank" class="twitter-link">Twitter</a></li>
+				<li><a href="https://open.spotify.com/user/goaliegirl333dlc?si=h1vnB1RhSR-5GSV3aX1ArQ
+				" target="_blank" class="spotify-link">Spotify</a></li>
+			</ul>
 
-		<h3><a href="projects.html">Back</a> </h3>
+			<h3><a href="projects.html">Back</a> </h3>
 
-		<h2>Scrambled Word Game</h2>
-		<h3>Java - 2017/18</h3>
-		<p class="video-description">My first-ever independent project using a "real" programming language was this
-		 Scrambled Word Game that I designed myself and programmed in Java during my sophomore
-		 year of high school. The game has multiple difficulty levels: easy, medium, and hard.
-		 The player has a three chances to correctly guess a randomly-selected word that has
-		 been scrambled using a different shuffle algorithm, depending on the selected game level.
-	 </p>
-	  <p>Click on the video below to learn more.</p>
+			<h2>Scrambled Word Game</h2>
+			<h3>Java - 2017/18</h3>
+			<p class="video-description">My first-ever independent project using a "real" programming language was this
+			 Scrambled Word Game that I designed myself and programmed in Java during my sophomore
+			 year of high school. The game has multiple difficulty levels: easy, medium, and hard.
+			 The player has a three chances to correctly guess a randomly-selected word that has
+			 been scrambled using a different shuffle algorithm, depending on the selected game level.
+		 </p>
+		  <p>Click on the video below to learn more.</p>
 
-		<iframe width=100% height=500px src="https://www.youtube.com/embed/B7h_E1wB36Q"
-		frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-		</iframe>
+			<iframe width=100% height=500px src="https://www.youtube.com/embed/B7h_E1wB36Q"
+			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
 
-
-
+		</div>
 
 		<!-- incorporate basic js functionality -->
 		<script src="basic.js" charset="utf-8"></script>
