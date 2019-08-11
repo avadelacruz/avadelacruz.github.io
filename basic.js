@@ -1,5 +1,6 @@
 var links;
-var lightModeOn;
+var darkModeOn;
+var currentPageName;
 
 // on page load
 $(function(){
@@ -9,8 +10,9 @@ $(function(){
   // alert(window.location.pathname);
   var pattern = new RegExp("[^/]+$");
   var page = pattern.exec(window.location.pathname);
+  currentPageName = page[0];
   $('ul li a').each(function() {
-    if($(this).attr("href")===page[0]){
+    if($(this).attr("href")===currentPageName){
       $(this).css("color", "#D77771");
     }
     else{
@@ -28,10 +30,18 @@ $("#slider").change(function(){
     //turn on light mode
     document.getElementById("light-css").disabled = false;
     document.getElementById("dark-css").disabled = true;
+    if(currentPageName=="resume.html"){
+      $("#resume-picture").attr("src", "DeLaCruz_Ava.jpeg");
+    }
   }
   else{
     //turn on dark mode
     document.getElementById("light-css").disabled = true;
     document.getElementById("dark-css").disabled = false;
+    //if on dark mode and on resume page, load dark resume
+    if(currentPageName=="resume.html"){
+      $("#resume-picture").attr("src", "DeLaCruz_Ava_Dark.jpeg");
+    }
+
   }
 })
