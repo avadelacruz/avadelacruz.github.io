@@ -1,5 +1,5 @@
 var links;
-var darkModeOn;
+var lightModeOn;
 var currentPageName;
 
 // on page load
@@ -25,16 +25,8 @@ $(function(){
 $("#slider").change(function(){
   //slider will default to checked, but on first change will be unchecked
   //box goes from checked->unchecked as user goes from light->dark mode
-  darkModeOn = this.checked;
-  if(darkModeOn){
-    //turn on light mode
-    document.getElementById("light-css").disabled = false;
-    document.getElementById("dark-css").disabled = true;
-    if(currentPageName=="resume.html"){
-      $("#resume-picture").attr("src", "DeLaCruz_Ava.jpeg");
-    }
-  }
-  else{
+  lightModeOn = this.checked;
+  if(lightModeOn){
     //turn on dark mode
     document.getElementById("light-css").disabled = true;
     document.getElementById("dark-css").disabled = false;
@@ -42,6 +34,13 @@ $("#slider").change(function(){
     if(currentPageName=="resume.html"){
       $("#resume-picture").attr("src", "DeLaCruz_Ava_Dark.jpeg");
     }
-
+  }
+  else{
+    //turn on light mode
+    document.getElementById("light-css").disabled = false;
+    document.getElementById("dark-css").disabled = true;
+    if(currentPageName=="resume.html"){
+      $("#resume-picture").attr("src", "DeLaCruz_Ava.jpeg");
+    }  
   }
 })
