@@ -68,6 +68,7 @@ html{
   font-family: Georgia, serif;
   color: #7caccf;
   background-color: #141d26;
+  /* visibility: hidden; */
 }
 
 body{

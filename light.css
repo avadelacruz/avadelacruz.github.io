@@ -38,7 +38,6 @@
 
 input:checked + .slider {
   background-color: #709bb5;
-
 }
 
 input:focus + .slider {
@@ -63,6 +62,7 @@ input:checked + .slider:before {
 html{
   font-family: Georgia, serif;
   color: #073763;
+  visibility: hidden;
 }
 
 .website-body{
