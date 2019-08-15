@@ -1,0 +1,20 @@
+/* display a circular, centered image of me */
+.image-cropper {
+  width: 25vw;
+  height: 25vw;
+  float: left;
+  clear: left;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.photo-of-me{
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  align-items: center;
+}

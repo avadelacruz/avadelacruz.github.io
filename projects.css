@@ -1,0 +1,15 @@
+/*  for projects page  */
+.video-description{
+  margin-left: 0;
+}
+
+.project-picture{
+  width: 200px;
+}
+
+.entry{
+  width: 25%;
+  float: left;
+  text-align: center;
+  margin-bottom: 25px;
+}

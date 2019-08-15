@@ -124,27 +124,6 @@ a{
   color: grey;
 }
 
-/* display a circular, centered image of me */
-.image-cropper {
-  width: 25vw;
-  height: 25vw;
-  float: left;
-  clear: left;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-right: 50px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.photo-of-me{
-  display: block;
-  margin: 0 auto;
-  height: 100%;
-  width: auto;
-  align-items: center;
-}
-
 /* display both nav bars horizontally */
 .nav-bar-1, .nav-bar-2{
   list-style: none;
@@ -194,30 +173,4 @@ a.twitter-link:hover{
 a.spotify-link:hover{
   color: #1DB954 !important;
   transition: .25s;
-}
-
-
-
-/*  for projects page  */
-.video-description{
-  margin-left: 0;
-}
-
-.left-post{
-  width: 50%;
-  float: left;
-}
-
-.right-post{
-  width: 50%;
-  float: right;
-}
-
-.project-picture{
-  width: 250px;
-  /* float: right; */
-}
-
-.project-description{
-  /* visibility: hidden; */
 }
