@@ -1,6 +1,4 @@
-//on doc load
-$(function(){
-
+function setActiveLinkColor(){
   //set active link color for current page
   var navbar = document.getElementById("site-nav-bar");
   var links = navbar.getElementsByTagName("li");
@@ -9,9 +7,19 @@ $(function(){
   localStorage["current-page-name"] = page[0];
   $('ul li a').each(function() {
     if($(this).attr("href")===localStorage["current-page-name"]){
-      $(this).css("color", "#D77771");
+      if(localStorage["current-stylesheet"]==="dark-css"){
+        $(this).css("color", "#f0a39e");
+      }
+      else {
+        $(this).css("color", "#D77771");
+      }
     }
   });
+}
+
+
+//on doc load
+$(function(){
   //if user chose dark theme previously, apply dark theme
   if(localStorage["current-stylesheet"]==="dark-css"){
     document.getElementById("light-css").disabled = true;
@@ -29,5 +37,7 @@ $(function(){
       $("#resume-picture").attr("src", "DeLaCruz_Ava.jpeg");
     }
   }
+
+  setActiveLinkColor();
 
 });
