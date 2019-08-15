@@ -1,6 +1,4 @@
-//on doc load
-$(function(){
-
+function setActiveLink(){
   //set active link color for current page
   var navbar = document.getElementById("site-nav-bar");
   var links = navbar.getElementsByTagName("li");
@@ -9,14 +7,25 @@ $(function(){
   localStorage["current-page-name"] = page[0];
   $('ul li a').each(function() {
     if($(this).attr("href")===localStorage["current-page-name"]){
-      $(this).css("color", "#D77771");
+      if(localStorage["current-stylesheet"]==="light-css"){
+        $(this).css("color", "#D77771");
+      }
+      else{
+        $(this).css("color", "#f0a39e");
+      }
     }
   });
+}
+
+
+//on doc load
+$(function(){
+
   //if user chose dark theme previously, apply dark theme
   if(localStorage["current-stylesheet"]==="dark-css"){
-    document.getElementById("light-css").disabled = true;
-    document.getElementById("dark-css").disabled = false;
     $("#slider").prop("checked", true);
+    document.getElementById("dark-css").disabled = false;
+    document.getElementById("light-css").disabled = true;
     if(localStorage["current-page-name"]=="resume.html"){
       $("#resume-picture").attr("src", "DeLaCruz_Ava_Dark.jpeg");
     }
@@ -29,5 +38,7 @@ $(function(){
       $("#resume-picture").attr("src", "DeLaCruz_Ava.jpeg");
     }
   }
+
+  setActiveLink();
 
 });
