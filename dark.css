@@ -69,10 +69,6 @@ html{
   background-color: #141d26;
 }
 
-/* body{
-  color: white;
-} */
-
 h1{
   font-family: 'Merriweather';
   text-align: center;
@@ -130,13 +126,15 @@ a{
 
 /* display a circular, centered image of me */
 .image-cropper {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-top: 10px;
+  width: 25vw;
+  height: 25vw;
+  float: left;
+  clear: left;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .photo-of-me{
