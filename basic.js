@@ -1,6 +1,6 @@
-$(function(){
-  document.getElementsByTagName("html")[0].style.visibility = "visible";
-});
+// $(function(){
+//   document.getElementsByTagName("html")[0].style.visibility = "visible";
+// });
 
 $("#slider").change(function(){
   //slider will default to checked, but on first change will be unchecked

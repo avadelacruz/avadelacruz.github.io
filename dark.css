@@ -38,7 +38,6 @@
 
 input:checked + .slider {
   background-color: #709bb5;
-
 }
 
 input:focus + .slider {
@@ -68,7 +67,6 @@ html{
   font-family: Georgia, serif;
   color: #7caccf;
   background-color: #141d26;
-  /* visibility: hidden; */
 }
 
 body{
@@ -79,7 +77,11 @@ h1{
   font-family: 'Merriweather';
   text-align: center;
   margin: 20px auto 10px auto;
+<<<<<<< HEAD
   font-size: 70px;
+=======
+  font-size: 65px;
+>>>>>>> 87598569e21280b5c6bafb49556d214c4c652e77
 }
 
 h1 a{
@@ -94,7 +96,11 @@ h1 a:hover{
 
 h2{
   font-family: 'Merriweather';
+<<<<<<< HEAD
   font-size: 30px;
+=======
+  font-size: 25px;
+>>>>>>> 87598569e21280b5c6bafb49556d214c4c652e77
   margin: 50px auto 0px auto;
   color: #95b6c9;
 }
@@ -102,7 +108,11 @@ h2{
 /* increase top margin for first line of text*/
 h2.first-paragraph{
   font-family: 'Merriweather';
+<<<<<<< HEAD
   font-size: 30px;
+=======
+  font-size: 25px;
+>>>>>>> 87598569e21280b5c6bafb49556d214c4c652e77
   margin: 50px auto 0px auto;
 }
 
