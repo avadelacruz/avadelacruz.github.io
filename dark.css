@@ -65,23 +65,19 @@ input:checked + .slider:before {
 
 html{
   font-family: Georgia, serif;
-  color: #7caccf;
+  color: #b5bec7;
   background-color: #141d26;
 }
 
-body{
+/* body{
   color: white;
-}
+} */
 
 h1{
   font-family: 'Merriweather';
   text-align: center;
   margin: 20px auto 10px auto;
-<<<<<<< HEAD
-  font-size: 70px;
-=======
   font-size: 65px;
->>>>>>> 87598569e21280b5c6bafb49556d214c4c652e77
 }
 
 h1 a{
@@ -96,23 +92,16 @@ h1 a:hover{
 
 h2{
   font-family: 'Merriweather';
-<<<<<<< HEAD
-  font-size: 30px;
-=======
   font-size: 25px;
->>>>>>> 87598569e21280b5c6bafb49556d214c4c652e77
-  margin: 50px auto 0px auto;
   color: #95b6c9;
+  margin: 50px auto 0px auto;
 }
 
 /* increase top margin for first line of text*/
 h2.first-paragraph{
   font-family: 'Merriweather';
-<<<<<<< HEAD
-  font-size: 30px;
-=======
   font-size: 25px;
->>>>>>> 87598569e21280b5c6bafb49556d214c4c652e77
+  color: #95b6c9;
   margin: 50px auto 0px auto;
 }
 

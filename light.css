@@ -65,7 +65,7 @@ input:checked + .slider:before {
 
 html{
   font-family: Georgia, serif;
-  color: #073763;
+  color: grey;
   /* visibility: hidden; */
 }
 
@@ -73,11 +73,7 @@ h1{
   font-family: 'Merriweather';
   text-align: center;
   margin: 20px auto 10px auto;
-<<<<<<< HEAD
-  font-size: 70px;
-=======
   font-size: 65px;
->>>>>>> 87598569e21280b5c6bafb49556d214c4c652e77
 }
 
 h1 a{
@@ -92,22 +88,16 @@ h1 a:hover{
 
 h2{
   font-family: 'Merriweather';
-<<<<<<< HEAD
-  font-size: 30px;
-=======
   font-size: 25px;
->>>>>>> 87598569e21280b5c6bafb49556d214c4c652e77
+  color: #073763;
   margin: 50px auto 0px auto;
 }
 
 /* increase top margin for first line of text*/
 h2.first-paragraph{
   font-family: 'Merriweather';
-<<<<<<< HEAD
-  font-size: 30px;
-=======
   font-size: 25px;
->>>>>>> 87598569e21280b5c6bafb49556d214c4c652e77
+  color: #073763;
   margin: 50px auto 0px auto;
 }
 
@@ -136,13 +126,14 @@ a{
 
 /* display a circular, centered image of me */
 .image-cropper {
-    width: 200px;
-    height: 200px;
-    position: relative;
+    width: 350px;
+    height: 350px;
+    float: left;
+    clear: left;
+    /* position: relative; */
     overflow: hidden;
     border-radius: 50%;
-    margin: 0 auto;
-    margin-top: 10px;
+    margin-right: 50px;
 }
 
 .photo-of-me{
