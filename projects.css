@@ -12,5 +12,9 @@
   float: left;
   text-align: center;
   margin-top: 25px;
+  min-width: 175px;
+}
 
+.table{
+  margin-top: 50px;
 }
