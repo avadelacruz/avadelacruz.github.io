@@ -20,19 +20,17 @@ function setActiveLinkColor(){
 
 //on doc load
 $(function(){
+
   setActiveLinkColor();
   //if user chose dark theme previously, apply dark theme
   if(localStorage["current-stylesheet"]==="dark-css"){
-    document.getElementById("light-css").disabled = true;
-    document.getElementById("dark-css").disabled = false;
+    $("#theme").attr("href", "dark.css");
     $("#slider").prop("checked", true);
     if(localStorage["current-page-name"]=="resume.html"){
       $("#resume-picture").attr("src", "DeLaCruz_Ava_Dark.jpeg");
     }
   }
   else{ //if user chose light theme previously, apply light theme
-    document.getElementById("light-css").disabled = false;
-    document.getElementById("dark-css").disabled = true;
     $("#slider").prop("checked", false);
     if(localStorage["current-page-name"]=="resume.html"){
       $("#resume-picture").attr("src", "DeLaCruz_Ava.jpeg");
