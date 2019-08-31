@@ -1,11 +1,14 @@
 
 function setActiveLinkColor(){
   //set active link color for current page
-  // var navbar = document.getElementById("site-nav-bar");
-  // var links = navbar.getElementsByTagName("li");
   var pattern = new RegExp("[^/]+$");
   var page = pattern.exec(window.location.pathname);
-  localStorage["current-page-name"] = page[0];
+  if(page[0] === ""){
+    localStorage["current-page-name"] = "index.html";
+  }
+  else{
+    localStorage["current-page-name"] = page[0];
+  }
   $('ul li a').each(function() {
     if($(this).attr("href")===localStorage["current-page-name"]){
       if(localStorage["current-stylesheet"]==="dark-css"){
@@ -21,11 +24,11 @@ function setActiveLinkColor(){
 
 //on doc load
 $(function(){
+  //set dark mode on load if previously chosen
 
   setActiveLinkColor();
   //if user chose dark theme previously, apply dark theme
   if(localStorage["current-stylesheet"]==="dark-css"){
-    $("html").css("background-color", "#141d26");
     $("#theme").attr("href", "dark.css");
     $("#slider").prop("checked", true);
     if(localStorage["current-page-name"]=="resume.html"){

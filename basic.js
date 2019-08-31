@@ -25,12 +25,6 @@ function changeTheme(lightModeWasOn){
 
 $("#site-nav-bar").on("click", function(){
 
-  // if(localStorage["current-stylesheet"] === "dark-css"){
-  //   alert("true");
-  //   $("html").css("background-color", "#141d26");
-  // }
-
-
 });
 
 
