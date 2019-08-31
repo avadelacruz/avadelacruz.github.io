@@ -3,7 +3,7 @@ function setActiveLinkColor(){
   //set active link color for current page
   var pattern = new RegExp("[^/]+$");
   var page = pattern.exec(window.location.pathname);
-  if(page[0] === ""){
+  if(page == null){
     localStorage["current-page-name"] = "index.html";
   }
   else{
