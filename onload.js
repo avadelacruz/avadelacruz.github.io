@@ -1,7 +1,8 @@
+
 function setActiveLinkColor(){
   //set active link color for current page
-  var navbar = document.getElementById("site-nav-bar");
-  var links = navbar.getElementsByTagName("li");
+  // var navbar = document.getElementById("site-nav-bar");
+  // var links = navbar.getElementsByTagName("li");
   var pattern = new RegExp("[^/]+$");
   var page = pattern.exec(window.location.pathname);
   localStorage["current-page-name"] = page[0];
@@ -24,6 +25,7 @@ $(function(){
   setActiveLinkColor();
   //if user chose dark theme previously, apply dark theme
   if(localStorage["current-stylesheet"]==="dark-css"){
+    $("html").css("background-color", "#141d26");
     $("#theme").attr("href", "dark.css");
     $("#slider").prop("checked", true);
     if(localStorage["current-page-name"]=="resume.html"){
