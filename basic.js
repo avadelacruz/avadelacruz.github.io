@@ -22,12 +22,6 @@ function changeTheme(lightModeWasOn){
 }
 
 
-
-$("#site-nav-bar").on("click", function(){
-
-});
-
-
 $("#slider").change(function(){
   //box goes from checked->unchecked as user goes from light->dark mode
   changeTheme(this.checked);
