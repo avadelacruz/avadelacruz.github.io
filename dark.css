@@ -200,28 +200,8 @@ a.spotify-link:hover{
   transition: .25s;
 }
 
-
-
-/*  for projects page  */
-.video-description{
-  margin-left: 0;
-}
-
-.left-post{
-  width: 50%;
-  float: left;
-}
-
-.right-post{
-  width: 50%;
-  float: right;
-}
-
-.project-picture{
-  width: 250px;
-  /* float: right; */
-}
-
-.project-description{
-  /* visibility: hidden; */
+.flowers{
+  width: 100%;
+  margin-top: 25px;
+  bottom: 0;
 }

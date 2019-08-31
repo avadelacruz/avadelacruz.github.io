@@ -178,3 +178,9 @@ a.spotify-link:hover{
   color: #1DB954 !important;
   transition: .25s;
 }
+
+.flowers{
+  width: 100%;
+  margin-top: 25px;
+  bottom: 0;
+}
