@@ -8,15 +8,16 @@
 }
 
 .entry{
-  width: 33%;
-  float: left;
+  width: 350px;
   text-align: center;
-  margin-top: 25px;
-  min-width: 175px;
+  min-width: 300px;
+  margin-bottom: 50px;
 }
 
-.table{
-  margin-top: 50px;
+.flex-table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-title{
