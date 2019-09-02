@@ -1,0 +1,23 @@
+/*  for hobbies page  */
+.flex-table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.entry{
+  width: 350px;
+  text-align: center;
+  min-width: 300px;
+  margin-bottom: 50px;
+}
+
+.hobby-picture{
+  width: 300px;
+}
+
+.hobby-title{
+  font-size: 20px;
+  margin-top: 5px;
+  width: 75%;
+}
