@@ -1,20 +1,41 @@
-/* display a circular, centered image of me */
-.image-cropper {
-  width: 25vw;
-  height: 25vw;
-  float: left;
-  clear: left;
-  overflow: hidden;
-  border-radius: 50%;
-  margin-right: 50px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+/* display a circular image of me */
+
+.about-flex-container {
+	display: flex;
+	flex-direction: row;
 }
 
-.photo-of-me{
-  display: block;
-  margin: 0 auto;
-  height: 100%;
-  width: auto;
-  align-items: center;
+@media only screen and (max-width: 1024px) {
+	.about-flex-container {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
+
+.about-text {
+	flex-shrink: 100;
+}
+
+.image-cropper {
+	width: 25vw;
+	height: 25vw;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+	.image-cropper {
+		width: 50vw;
+		height: 50vw;
+		margin: 25px auto;
+	}
+}
+
+.photo-of-me {
+	display: block;
+	margin: 0 auto;
+	height: 100%;
+	width: auto;
+	align-items: center;
 }

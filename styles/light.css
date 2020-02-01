@@ -70,7 +70,6 @@ input:checked + .slider:before {
 html {
 	font-family: Georgia, serif;
 	color: grey;
-	/* visibility: hidden; */
 }
 
 h1 {
