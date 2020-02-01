@@ -151,34 +151,11 @@ a {
 }
 
 /* change website navigation links to pink on hover */
-.nav-bar-1 a:hover {
-	color: #d77771 !important;
-	transition: 0.25s;
-}
-
-/* style links with company colors on hover */
-a.github-link:hover {
-	color: #767676 !important;
-	transition: 0.25s;
-}
-
-a.linkedin-link:hover {
-	color: #0077b5 !important;
-	transition: 0.25s;
-}
-
-a.facebook-link:hover {
-	color: #3c5a99 !important;
-	transition: 0.25s;
-}
-
-a.twitter-link:hover {
-	color: #00aced !important;
-	transition: 0.25s;
-}
-
-a.spotify-link:hover {
-	color: #1db954 !important;
+.nav-bar-1 a:hover,
+.nav-bar-1 a.active,
+.nav-bar-2 a:hover,
+.nav-bar-2 a.active {
+	text-decoration: underline !important;
 	transition: 0.25s;
 }
 
