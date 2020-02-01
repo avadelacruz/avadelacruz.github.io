@@ -1,6 +1,4 @@
-function setActiveLinkColor() {
-	console.log("hi");
-	//set active link color for current page
+function setActiveLink() {
 	var pagePattern = new RegExp("([^/]+)(?=[^/]*/?$)");
 	var page = pagePattern.exec(window.location.pathname);
 	if (page == null) {
@@ -8,35 +6,23 @@ function setActiveLinkColor() {
 	} else {
 		localStorage["current-page-name"] = page[0];
 	}
-
+	// if the current page matches a link in the nav bar, mark that link as active
 	$("ul li a").each(function() {
-		console.log($(this).attr("href"));
 		let linkPattern = new RegExp("[^/.]+");
 		let linkName = linkPattern.exec($(this).attr("href"));
-		console.log(linkName);
 		if (
 			linkName !== null &&
 			linkName[0] === localStorage["current-page-name"]
 		) {
-			// console.log("TRUE!!!");
-			// if (localStorage["current-stylesheet"] === "dark-css") {
 			$(this).addClass("active");
-			// } else {
-			// 	$(this).css("color", "#D77771");
-			// }
 		}
 	});
 }
 
-//on doc load
 $(function() {
+	setActiveLink();
 	//set dark mode on load if previously chosen
-
-	setActiveLinkColor();
-	//if user chose dark theme previously, apply dark theme
 	if (localStorage["current-stylesheet"] === "dark-css") {
-		// $("#theme").attr("href", "../styles/dark.css");
-
 		localStorage["current-page-name"] == ""
 			? $("#theme").attr("href", "./styles/dark.css")
 			: $("#theme").attr("href", "../styles/dark.css");
