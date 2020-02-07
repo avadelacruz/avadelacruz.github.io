@@ -3,24 +3,18 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-top: 50px;
+	margin-top: 75px;
 }
 
 .entry {
 	text-align: center;
-	margin: 0 0 50px 0;
+	margin: 0 5px 50px 5px;
 }
 
 .hobby-picture {
 	width: 250px;
 	border: 5px solid #b5bec7;
 	border-radius: 10px;
-}
-
-.hobby-title {
-	font-size: 20px;
-	margin-top: 5px;
-	width: 75%;
 }
 
 a img:hover {
