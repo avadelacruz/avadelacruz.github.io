@@ -23,6 +23,7 @@ $(function() {
 	setActiveLink();
 	//set dark mode on load if previously chosen
 	if (localStorage["current-stylesheet"] === "dark-css") {
+		// issue here with projects page? might need to go up another level to access css
 		localStorage["current-page-name"] == ""
 			? $("#theme").attr("href", "./styles/dark.css")
 			: $("#theme").attr("href", "../styles/dark.css");
