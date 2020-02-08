@@ -2,7 +2,7 @@
 .flex-table {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	margin-top: 75px;
 }
 
