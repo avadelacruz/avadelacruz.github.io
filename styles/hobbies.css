@@ -13,11 +13,24 @@
 
 .hobby-picture {
 	width: 250px;
-	border: 5px solid #b5bec7;
+	border: 5px solid #94a2af;
 	border-radius: 10px;
 }
 
 a img:hover {
 	position: relative;
 	top: -5px;
+}
+
+a.hobby-tile {
+	text-decoration: none;
+}
+
+a.hobby-tile div.tile-title {
+	font-family: "Merriweather";
+	text-transform: uppercase;
+	margin-top: 10px;
+	letter-spacing: 1px;
+	font-size: 15px;
+	color: #94a2af;
 }
