@@ -1,0 +1,177 @@
+body {
+	background-color: #d196a5;
+	font-family: sans-serif;
+	margin: 0;
+	color: white;
+	line-height: 25px;
+}
+.hero {
+	height: 100vh;
+	margin: 0;
+}
+.hero-content {
+	width: 75%;
+	padding-top: 40vh;
+	margin: 0 auto;
+	text-align: center;
+}
+.hero-content h1 {
+	color: white;
+	font-size: 60px;
+	margin: 0px auto 30px auto;
+	line-height: 60px;
+}
+.hero-content h2 {
+	color: white;
+	font-size: 30px;
+}
+@media only screen and (max-width: 1060px) {
+	.hero-content {
+		width: 80%;
+	}
+	.hero-content h1 {
+		font-size: 55px;
+	}
+
+	.hero-content h2 {
+		font-size: 25px;
+	}
+
+	/* .hero-content h1 {
+		font-size: 50px;
+    } */
+}
+
+@media only screen and (max-width: 780px) {
+	.hero-content {
+		width: 85%;
+	}
+	.hero-content h2 {
+		font-size: 22.5px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.hero-content {
+		padding-top: 35vh;
+		width: 87.5%;
+	}
+	.hero-content h1 {
+		font-size: 50px;
+	}
+	/* .hero-content h2 {
+		font-size: ;
+	} */
+}
+
+.down-arrow {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.down-arrow::after {
+	content: "";
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: -400px;
+	left: 0;
+	border-right: 4px solid #ffffff;
+	border-bottom: 4px solid #ffffff;
+	border-radius: 5px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-animation: 2.5s arrow infinite ease;
+	animation: 2.5s arrow infinite ease;
+}
+
+@-webkit-keyframes arrow {
+	0%,
+	100% {
+		top: 25px;
+	}
+	50% {
+		top: 80px;
+	}
+}
+
+@keyframes arrow {
+	0%,
+	100% {
+		top: 25px;
+	}
+	50% {
+		top: 80px;
+	}
+}
+
+.main {
+	height: 100vh;
+	background-color: white;
+}
+
+footer {
+	background-color: #143109;
+	color: #f0f0f0;
+	min-height: 20vh;
+	overflow: hidden;
+}
+
+footer h2 {
+	color: #ffffff;
+}
+.footer-content {
+	margin: 50px 20%;
+}
+address {
+	font-style: normal;
+}
+.email-address {
+	color: #d0d6b3;
+	text-decoration: none;
+}
+.social-icon {
+	width: 20px;
+}
+
+.footer-flexbox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+/* .footer-flexitem {
+	margin-right: 5vw;
+} */
+/* 
+.footer-flexitem.email {
+	margin-right: 5vw;
+} */
+
+.footer-flexitem p {
+	margin: 0;
+}
+
+.footer-flexitem.socials {
+	flex: 4 0 150px;
+	margin: 0 2.5vw 0 10vw;
+}
+
+.socials-flexbox {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+}
+
+.socials-flexitem {
+	margin: 0 0 10px 10px;
+}
+
+.socials-flexitem a {
+	color: #d0d6b3;
+	text-decoration: none;
+}
