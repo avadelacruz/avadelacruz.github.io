@@ -162,7 +162,7 @@ footer h2 {
 }
 @media only screen and (max-width: 1060px) {
 	.footer-content {
-		margin: 50px 10%;
+		margin: 50px 12.5%;
 	}
 }
 
@@ -184,7 +184,7 @@ address {
 	width: 100%;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 780px) {
 	.footer-flexbox {
 		flex-wrap: wrap;
 	}
@@ -200,7 +200,7 @@ address {
 	margin: 0 2.5vw 0 0;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 780px) {
 	.footer-flexitem.socials {
 		flex: 0 1 auto;
 	}
