@@ -132,26 +132,60 @@ body {
 	}
 }
 
+.about {
+	margin-top: 40px;
+	color: #231f20;
+}
+
 .catchphrase {
 	background-color: #d0d6b3;
 	padding: 20px;
 	line-height: 45px;
 	margin: 0 auto;
+	color: #ffffff;
 }
 
 .about-intro-flexbox {
 	display: flex;
 	flex-direction: row;
+	margin-top: 50px;
 }
-
-.about-intro-text {
-	color: #231f20;
-}
-
 .ava-portrait {
 	max-width: 300px;
 }
+@media only screen and (max-width: 780px) {
+	.about-intro-flexbox {
+		flex-direction: column;
+	}
+	.ava-portrait {
+		max-width: 100%;
+		margin-top: 25px;
+	}
+}
 
+.about-intro-text {
+	padding-right: 25px;
+}
+
+.main-subheading {
+	text-transform: uppercase;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: #8d8a8a;
+}
+
+.skills p {
+	margin: 0;
+}
+
+.experiences h3 {
+	margin-bottom: 0;
+}
+
+.experiences h4 {
+	margin-top: 0;
+}
 /* 	footer content						 */
 
 footer {
@@ -212,7 +246,7 @@ address {
 	.footer-flexitem.socials {
 		flex: 0 1 auto;
 	}
-	.footer-flexitem.about {
+	.footer-flexitem.summary {
 		margin-top: 20px;
 	}
 }
