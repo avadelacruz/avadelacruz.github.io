@@ -1,8 +1,6 @@
 body {
-	background-color: #d196a5;
 	font-family: sans-serif;
 	margin: 0;
-	color: white;
 }
 
 /* 	hero content						 */
@@ -10,6 +8,8 @@ body {
 .hero {
 	height: 100vh;
 	margin: 0;
+	background-color: #ce8980;
+	color: white;
 }
 .hero-content {
 	width: 75%;
@@ -133,12 +133,16 @@ body {
 }
 
 .about {
-	margin-top: 40px;
 	color: #231f20;
 }
 
+.about a {
+	color: #afbb2d;
+	text-decoration: none;
+}
+
 .catchphrase {
-	background-color: #d0d6b3;
+	background-color: #d5d9a5;
 	padding: 20px;
 	line-height: 45px;
 	margin: 0 auto;
@@ -148,7 +152,7 @@ body {
 .about-intro-flexbox {
 	display: flex;
 	flex-direction: row;
-	margin-top: 50px;
+	margin-top: 25px;
 }
 .ava-portrait {
 	max-width: 300px;
@@ -169,28 +173,30 @@ body {
 
 .main-subheading {
 	text-transform: uppercase;
-	margin-top: 40px;
+	margin-top: 50px;
 	margin-bottom: 10px;
 	font-size: 20px;
-	color: #8d8a8a;
+	color: #898985;
 }
 
 .skills p {
 	margin: 0;
 }
 
-.experiences h3 {
-	margin-bottom: 0;
+.experience-details h3 {
+	margin: 0 auto;
 }
 
-.experiences h4 {
+.experience-details h4 {
 	margin-top: 0;
+	font-weight: normal;
 }
+
 /* 	footer content						 */
 
 footer {
-	background-color: #143109;
-	color: #f0f0f0;
+	background-color: #79483a;
+	color: #ece4e0;
 	min-height: 20vh;
 	overflow: hidden;
 	line-height: 30px;
@@ -212,7 +218,7 @@ address {
 	font-style: normal;
 }
 .email-address {
-	color: #d0d6b3;
+	color: #ffffff;
 	text-decoration: none;
 }
 .social-icon {
@@ -262,7 +268,7 @@ address {
 }
 
 .socials-flexitem a {
-	color: #d0d6b3;
+	color: #ffffff;
 	text-decoration: none;
 }
 
