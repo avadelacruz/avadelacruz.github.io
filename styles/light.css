@@ -69,8 +69,7 @@ input:checked + .slider:before {
 
 html {
 	font-family: Georgia, serif;
-	color: #b5bec7;
-	background-color: #141d26;
+	color: grey;
 }
 
 h1 {
@@ -81,27 +80,28 @@ h1 {
 }
 
 h1 a {
-	color: #95b6c9;
+	color: #073763;
 	text-decoration: none;
 }
 
 h1 a:hover {
-	color: #f0a39e;
+	color: #d77771;
 	transition: 0.25s;
 }
 
 h2 {
 	font-family: "Merriweather";
 	font-size: 25px;
-	color: #95b6c9;
+	color: #073763;
 	margin: 50px auto 0px auto;
+	text-transform: uppercase;
 }
 
 /* increase top margin for first line of text*/
 h2.first-paragraph {
 	font-family: "Merriweather";
 	font-size: 25px;
-	color: #95b6c9;
+	color: #073763;
 	margin: 50px auto 0px auto;
 }
 
@@ -113,19 +113,19 @@ h3 {
 	font: Georgia;
 	font-size: 18px;
 	font-weight: normal;
-	color: white;
+	color: black;
 	margin: 5px auto;
 }
 
 p {
 	margin: 25px auto;
 	font-size: 16px;
-	color: #b5bec7;
+	color: grey;
 }
 
 a {
 	text-decoration: underline;
-	color: #b5bec7;
+	color: grey;
 }
 
 /* display both nav bars horizontally */
@@ -147,9 +147,10 @@ a {
 	display: inline-block;
 	padding: 5px 20px;
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 
+/* change website navigation links to pink on hover */
 .nav-bar-1 a:hover,
 .nav-bar-1 a.active,
 .nav-bar-2 a:hover,

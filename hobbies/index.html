@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Ava DeLaCruz - News</title>
+		<title>Ava DeLaCruz - Hobbies</title>
 		<link rel="icon" href="../images/avatar.png" type="image/x-icon" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link
@@ -15,23 +15,20 @@
 			id="theme"
 			title="theme"
 		/>
+		<link rel="stylesheet" type="text/css" href="../styles/hobbies.css" />
 
 		<!-- jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script type="text/javascript" src="../scripts/onload.js"></script>
 		<title>Ava's Website</title>
 	</head>
-
 	<body>
 		<label class="switch">
 			<input type="checkbox" id="slider" />
 			<span class="slider round"></span>
 		</label>
-
 		<div class="top-bar">
 			<h1><a href="../">AVA DELACRUZ</a></h1>
-			<!-- would be cool to have theme change on name click -->
-			<!-- switch stylesheet, resume img, pic of me for new theme -->
 			<ul class="nav-bar-1" id="site-nav-bar">
 				<li><a href="../about/">About</a></li>
 				<li><a href="../resume/">Resume</a></li>
@@ -86,18 +83,44 @@
 		</div>
 
 		<div class="website-body">
-			<h2 class="first-paragraph">IN THE NEWS</h2>
-			<h3>This page is currently under construction.</h3>
-			<p>Here's some text, just for fun.</p>
-			<img src="../images/full-flowers.png" alt="flowers" class="flowers" />
+			<h2 class="first-paragraph">My Hobbies</h2>
+			<h3>In my free time, I enjoy traveling, cooking, and painting.</h3>
+			<p>Click on a tile to learn more about each hobby.</p>
 
-			<!-- <div class="post">
-				<h1 class="post-title">Post 1</h1>
-				<a href="http://avaabroad.com"><img src="../images/paintbrush.png"></img></a>
+			<div class="flex-table">
+				<div class="entry">
+					<a href="https://avaabroad.com/" target="_blank" class="hobby-tile"
+						><img
+							src="../images/travel.png"
+							alt="travel"
+							class="hobby-picture"
+						/>
+						<div class="tile-title">Travel</div>
+					</a>
+				</div>
 
-			</div> -->
+				<div class="entry">
+					<a href="" class="hobby-tile"
+						><img
+							src="../images/cooking.png"
+							alt="cooking"
+							class="hobby-picture"
+						/>
+						<div class="tile-title">Cooking</div>
+					</a>
+				</div>
+				<div class="entry">
+					<a href="" class="hobby-tile"
+						><img
+							src="../images/painting.png"
+							alt="painting"
+							class="hobby-picture"
+						/>
+						<div class="tile-title">Painting</div>
+					</a>
+				</div>
+			</div>
 		</div>
-
 		<!-- incorporate basic js functionality -->
 		<script src="../scripts/basic.js" charset="utf-8"></script>
 	</body>

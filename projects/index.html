@@ -1,16 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Ava DeLaCruz - Home</title>
+		<title>Ava DeLaCruz - Projects</title>
 		<link rel="icon" href="../images/avatar.png" type="image/x-icon" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-		<link rel="canonical" href="./resume/" />
-		<link rel="canonical" href="./projects/" />
-		<link rel="canonical" href="./news/" />
-		<link rel="canonical" href="./hobbies/" />
-		<link rel="canonical" href="./contact/" />
-
 		<link
 			href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"
 			rel="stylesheet"
@@ -18,14 +11,14 @@
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="./styles/light.css"
+			href="../styles/light.css"
 			id="theme"
 			title="theme"
 		/>
-
+		<link rel="stylesheet" type="text/css" href="../styles/projects.css" />
 		<!-- jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script type="text/javascript" src="./scripts/onload.js"></script>
+		<script type="text/javascript" src="../scripts/onload.js"></script>
 		<title>Ava's Website</title>
 	</head>
 	<body>
@@ -35,14 +28,14 @@
 		</label>
 
 		<div class="top-bar">
-			<h1><a href="./">AVA DELACRUZ</a></h1>
+			<h1><a href="../">AVA DELACRUZ</a></h1>
 			<ul class="nav-bar-1" id="site-nav-bar">
-				<li><a href="./about/">About</a></li>
-				<li><a href="./resume/">Resume</a></li>
-				<li><a href="./projects/">Projects</a></li>
-				<li><a href="./news/">News</a></li>
-				<li><a href="./hobbies/">Hobbies</a></li>
-				<li><a href="./contact/">Contact</a></li>
+				<li><a href="../about/">About</a></li>
+				<li><a href="../resume/">Resume</a></li>
+				<li><a href="../projects/">Projects</a></li>
+				<li><a href="../news/">News</a></li>
+				<li><a href="../hobbies/">Hobbies</a></li>
+				<li><a href="../contact/">Contact</a></li>
 			</ul>
 			<ul class="nav-bar-2">
 				<li>
@@ -90,15 +83,47 @@
 		</div>
 
 		<div class="website-body">
-			<h2 class="first-paragraph">HELLO WORLD.</h2>
-			<h3>Welcome to my personal website, built by me.</h3>
-			<p>
-				Use the upper navigation bar to explore this site. Use the lower
-				navigation bar to explore my GitHub and social media. Enjoy!
-			</p>
-			<img src="./images/full-flowers.png" alt="flowers" class="flowers" />
+			<h2 class="first-paragraph">Technical Projects</h2>
+			<h3>
+				Demonstrations and in-depth explanations of some of my past technical
+				projects. More coming soon!
+			</h3>
+			<p>Click on a tile to learn more about each project.</p>
+
+			<div class="flex-table">
+				<div class="entry">
+					<a href="./2/" class="tile"
+						><img
+							src="../images/cooking-companion.png"
+							alt="plate and utensils"
+							class="project-picture"
+						/>
+						<div class="project-title">Cooking Companion</div>
+					</a>
+				</div>
+				<div class="entry">
+					<a href="./1/" class="tile"
+						><img
+							src="../images/gov-body.png"
+							alt="group of people"
+							class="project-picture"
+						/>
+						<div class="project-title">AAPI Meeting Scheduler</div>
+					</a>
+				</div>
+				<div class="entry">
+					<a href="./0/" class="tile"
+						><img
+							src="../images/scrambled.png"
+							alt="scrambled letters"
+							class="project-picture"
+						/>
+						<div class="project-title">Scrambled Word Game</div>
+					</a>
+				</div>
+			</div>
 		</div>
 		<!-- incorporate basic js functionality -->
-		<script src="./scripts/basic.js" charset="utf-8"></script>
+		<script src="../scripts/basic.js" charset="utf-8"></script>
 	</body>
 </html>
