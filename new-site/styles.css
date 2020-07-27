@@ -1,0 +1,290 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+
+/* 	hero content						 */
+
+.hero {
+	height: 100vh;
+	margin: 0;
+	background-color: #ce8980;
+	color: white;
+}
+.hero-content {
+	width: 75%;
+	padding-top: 40vh;
+	margin: 0 auto;
+	text-align: center;
+}
+.hero-content h1 {
+	color: white;
+	font-size: 60px;
+	margin: 0px auto 30px auto;
+	line-height: 60px;
+}
+.hero-content h2 {
+	color: white;
+	font-size: 30px;
+}
+@media only screen and (max-width: 1060px) {
+	.hero-content {
+		width: 80%;
+	}
+	.hero-content h1 {
+		font-size: 55px;
+	}
+
+	.hero-content h2 {
+		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.hero-content {
+		width: 85%;
+	}
+	.hero-content h2 {
+		font-size: 22.5px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.hero-content {
+		padding-top: 35vh;
+		width: 87.5%;
+	}
+	.hero-content h1 {
+		font-size: 50px;
+	}
+}
+
+.down-arrow {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.down-arrow::after {
+	content: "";
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: -400px;
+	left: 0;
+	border-right: 4px solid #ffffff;
+	border-bottom: 4px solid #ffffff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-animation: 2.5s arrow infinite ease;
+	animation: 2.5s arrow infinite ease;
+}
+
+@-webkit-keyframes arrow {
+	0%,
+	100% {
+		top: 25px;
+	}
+	50% {
+		top: 80px;
+	}
+}
+
+@keyframes arrow {
+	0%,
+	100% {
+		top: 25px;
+	}
+	50% {
+		top: 80px;
+	}
+}
+
+/* 	main content						 */
+
+.main {
+	min-height: 100vh;
+	background-color: white;
+}
+
+.main-content {
+	width: 60%;
+	margin: 0 auto;
+	padding: 50px 0;
+	line-height: 30px;
+}
+
+@media only screen and (max-width: 1060px) {
+	.main-content {
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 780px) {
+	.main-content {
+		width: 85%;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.main-content {
+		width: 87.5%;
+	}
+}
+
+.about {
+	color: #231f20;
+}
+
+.about a {
+	color: #afbb2d;
+	text-decoration: none;
+}
+
+.about a:hover {
+	text-decoration: underline;
+}
+
+.catchphrase {
+	background-color: #cacf91;
+	padding: 20px;
+	line-height: 45px;
+	margin: 0 auto;
+	color: #ffffff;
+}
+
+.about-intro-flexbox {
+	display: flex;
+	flex-direction: row;
+	margin-top: 25px;
+}
+.ava-portrait {
+	max-width: 300px;
+}
+@media only screen and (max-width: 780px) {
+	.about-intro-flexbox {
+		flex-direction: column;
+	}
+	.ava-portrait {
+		max-width: 100%;
+		margin-top: 25px;
+	}
+}
+
+.about-intro-text {
+	padding-right: 25px;
+}
+
+.main-subheading {
+	text-transform: uppercase;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: #898985;
+}
+
+.skills p {
+	margin: 0;
+}
+
+.experience-details h3 {
+	margin: 0 auto;
+}
+
+.experience-details h4 {
+	margin-top: 0;
+	font-weight: normal;
+}
+
+/* 	footer content						 */
+
+footer {
+	background-color: #79483a;
+	color: #ece4e0;
+	min-height: 20vh;
+	overflow: hidden;
+	line-height: 30px;
+}
+
+footer h2 {
+	color: #ffffff;
+}
+.footer-content {
+	margin: 50px 15%;
+}
+@media only screen and (max-width: 1060px) {
+	.footer-content {
+		margin: 50px 12.5%;
+	}
+}
+
+address {
+	font-style: normal;
+}
+.email-address {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.email-address:hover {
+	text-decoration: underline;
+}
+
+.social-icon {
+	width: 20px;
+}
+
+.footer-flexbox {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+@media only screen and (max-width: 780px) {
+	.footer-flexbox {
+		flex-wrap: wrap;
+	}
+}
+
+.footer-flexitem.email {
+	margin-right: 10vw;
+	margin-bottom: 20px;
+}
+
+.footer-flexitem.socials {
+	flex: 4 0 150px;
+	margin: 0 2.5vw 0 0;
+}
+
+@media only screen and (max-width: 780px) {
+	.footer-flexitem.socials {
+		flex: 0 1 auto;
+	}
+	.footer-flexitem.summary {
+		margin-top: 20px;
+	}
+}
+
+.socials-flexbox {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+}
+
+.socials-flexitem {
+	margin: 0 0 10px 0;
+}
+
+.socials-flexitem a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.socials-flexitem a:hover {
+	text-decoration: underline;
+}
+
+.footer-flexitem p {
+	margin: 0;
+}
