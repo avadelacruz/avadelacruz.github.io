@@ -1,9 +1,0 @@
-a.my-email{
-    color: grey;
-}
-
-a.my-email:hover{
-    text-decoration: none;
-    color: #D77771;
-    transition: .25s;
-}
