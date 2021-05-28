@@ -8,54 +8,86 @@ body {
 .hero {
 	height: 100vh;
 	margin: 0;
-	background-color: #668b80;
+	background-color: #8b999f;
 	color: white;
 }
 .hero-content {
 	width: 75%;
-	padding-top: 40vh;
+	padding-top: 20vh;
 	margin: 0 auto;
 	text-align: center;
 }
+.hero-flexbox {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+.hero-img {
+	margin: 0 auto;
+}
+.hero-img img {
+	max-width: 375px;
+	border-radius: 50%;
+}
+.hero-text {
+	margin: 0 auto;
+}
 .hero-content h1 {
-	color: white;
+	color: #202021;
 	font-size: 60px;
-	margin: 0px auto 30px auto;
+	text-align: left;
+	margin: 0px auto 25px auto;
 	line-height: 60px;
 }
+
+.hero-content h1 mark {
+	font-style: italic;
+	background-color: white;
+	color: #202021;
+}
+
 .hero-content h2 {
 	color: white;
-	font-size: 30px;
+	font-size: 24px;
+	margin: 5px 0;
+	font-weight: normal;
+	text-align: left;
 }
-@media only screen and (max-width: 1060px) {
+
+@media only screen and (max-width: 1024px) {
 	.hero-content {
-		width: 80%;
+		width: 75%;
+		padding-top: 10vh;
+	}
+	.hero-flexbox {
+		flex-direction: column;
 	}
 	.hero-content h1 {
-		font-size: 55px;
-	}
-
-	.hero-content h2 {
-		font-size: 25px;
-	}
-}
-
-@media only screen and (max-width: 780px) {
-	.hero-content {
-		width: 85%;
+		font-size: 50px;
+		text-align: center;
+		line-height: normal;
 	}
 	.hero-content h2 {
-		font-size: 22.5px;
+		font-size: 22px;
+	}
+	.hero-img img {
+		max-width: 275px;
 	}
 }
 
 @media only screen and (max-width: 480px) {
 	.hero-content {
-		padding-top: 35vh;
+		padding-top: 10vh;
 		width: 87.5%;
 	}
 	.hero-content h1 {
-		font-size: 50px;
+		font-size: 40px;
+	}
+	.hero-img img {
+		max-width: 175px;
+	}
+	.hero-content h2 {
+		font-size: 20px;
 	}
 }
 
@@ -137,7 +169,7 @@ body {
 }
 
 .about a {
-	color: #afbb2d;
+	color: #607657;
 	text-decoration: none;
 }
 
@@ -146,7 +178,7 @@ body {
 }
 
 .catchphrase {
-	background-color: #cacf91;
+	background-color: #607657;
 	padding: 20px;
 	line-height: 45px;
 	margin: 0 auto;
@@ -199,7 +231,7 @@ body {
 /* 	footer content						 */
 
 footer {
-	background-color: #79483a;
+	background-color: #202021;
 	color: #ece4e0;
 	min-height: 20vh;
 	overflow: hidden;
