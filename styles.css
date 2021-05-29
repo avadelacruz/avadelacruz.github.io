@@ -7,6 +7,7 @@ body {
 
 .hero {
 	height: 100vh;
+	min-height: 800px;
 	margin: 0;
 	background-color: #8b999f;
 	color: white;
