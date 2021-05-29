@@ -1,5 +1,5 @@
 body {
-	font-family: sans-serif;
+	font-family: "Roboto", sans-serif;
 	margin: 0;
 }
 
@@ -31,6 +31,7 @@ body {
 }
 .hero-text {
 	margin: 0 auto;
+	padding-left: 25px;
 }
 .hero-content h1 {
 	color: #202021;
@@ -49,7 +50,7 @@ body {
 .hero-content h2 {
 	color: white;
 	font-size: 24px;
-	margin: 5px 0;
+	margin: 8px 0;
 	font-weight: normal;
 	text-align: left;
 }
@@ -66,6 +67,7 @@ body {
 		font-size: 50px;
 		text-align: center;
 		line-height: normal;
+		margin-top: 25px;
 	}
 	.hero-content h2 {
 		font-size: 22px;
@@ -219,12 +221,21 @@ body {
 	margin: 0;
 }
 
+.experience-details {
+	margin-bottom: 15px;
+}
+
 .experience-details h3 {
 	margin: 0 auto;
 }
 
 .experience-details h4 {
-	margin-top: 0;
+	margin: 0 auto;
+	font-weight: normal;
+}
+
+.experience-details h5 {
+	margin: 0 auto;
 	font-weight: normal;
 }
 
