@@ -103,7 +103,7 @@ body {
 @media only screen and (max-width: 1072px) {
 	.hero-content {
 		width: 75%;
-		padding-top: 20vh;
+		padding-top: 15vh;
 	}
 	.hero-flexbox {
 		flex-direction: column;
