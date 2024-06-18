@@ -158,17 +158,18 @@ body {
 
 @media only screen and (max-width: 480px) {
 	.hero-content {
+		padding-top: 12vh;
 		width: 90%;
 	}
 	.hero-img img {
 		max-width: 225px;
 	}
 	.hero-content h1 {
-		font-size: 40px;
+		font-size: 36px;
 	}
 	.hero-content h2 {
 		font-size: 16px;
-		line-height: 28px;
+		/* line-height: 28px; */
 	}
 }
 
