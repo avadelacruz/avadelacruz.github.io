@@ -34,27 +34,30 @@ body {
 	margin: 0 auto;
 	padding-left: 25px;
 }
-.hero-content h1 {
-	color: #d3d3d3;
-	font-size: 64px;
-	text-align: left;
-	/* margin: 0px auto 25px auto; */
-	line-height: 15px;
-}
-
-.hero-content h1 {
-	color: white;
-	/* font-weight: bolder; */
-}
 
 .hero-title {
-	background-color: ;
 	padding: 5px;
 	border-width: 5px;
 	border-radius: 5px;
 }
+.hero-title h1 {
+	color: white;
+	font-size: 60px;
+	text-align: left;
+	/* margin: 0px auto 25px auto; */
+	line-height: 15px;
+}
+.hero-title h2 {
+	color: #d3d3d3;
+	font-size: 32px;
+	font-weight: lighter;
+	font-style: italic;
+	text-align: left;
+	/* margin: 0px auto 25px auto; */
+	line-height: 10px;
+}
 
-.hero-description h2{
+.hero-description h2 {
 	color: white;
 	font-size: 24px;
 	margin: 10px 0;
@@ -110,18 +113,24 @@ body {
 @media only screen and (max-width: 1072px) {
 	.hero-content {
 		width: 75%;
-		padding-top: 15vh;
+		padding-top: 10vh;
 	}
 	.hero-flexbox {
 		flex-direction: column;
 	}
-	.hero-content h1 {
+	.hero-title h1 {
+		font-size: 58px;
 		text-align: center;
 		line-height: normal;
-		margin-top: 64px;
-		margin-bottom: 24px;
+		margin-top: 48px;
+		margin-bottom: 0;
 	}
-	.hero-content h2 {
+	.hero-title h2 {
+		/* margin: 0px auto 25px auto; */
+		margin-top: 12px;
+		margin-bottom: 36px;
+	}
+	.hero-description h2 {
 		font-size: 22px;
 		margin-top: 0px;
 	}
@@ -136,17 +145,20 @@ body {
 
 @media only screen and (max-width: 600px) {
 	.hero-content {
-		padding-top: 15vh;
+		padding-top: 20vh;
 		width: 87.5%;
 	}
 
 	.hero-img img {
 		max-width: 275px;
 	}
-	.hero-content h1 {
+	.hero-title h1 {
 		font-size: 50px;
 	}
-	.hero-content h2 {
+	.hero-title h2 {
+		font-size: 25px;
+	}
+	.hero-description h2 {
 		font-size: 18px;
 	}
 	.down-arrow::after {
@@ -158,16 +170,33 @@ body {
 
 @media only screen and (max-width: 480px) {
 	.hero-content {
-		padding-top: 12vh;
+		padding-top: 20vh;
 		width: 90%;
 	}
 	.hero-img img {
 		max-width: 225px;
 	}
-	.hero-content h1 {
+	.hero-title h1 {
 		font-size: 36px;
 	}
-	.hero-content h2 {
+	.hero-description h2 {
+		font-size: 16px;
+		/* line-height: 28px; */
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.hero-content {
+		padding-top: 10vh;
+		width: 90%;
+	}
+	.hero-img img {
+		max-width: 225px;
+	}
+	.hero-title h1 {
+		font-size: 36px;
+	}
+	.hero-description h2 {
 		font-size: 16px;
 		/* line-height: 28px; */
 	}
