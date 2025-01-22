@@ -145,7 +145,7 @@ body {
 
 @media only screen and (max-width: 600px) {
 	.hero-content {
-		padding-top: 20vh;
+		padding-top: 15vh;
 		width: 87.5%;
 	}
 
@@ -170,7 +170,7 @@ body {
 
 @media only screen and (max-width: 480px) {
 	.hero-content {
-		padding-top: 20vh;
+		padding-top: 15vh;
 		width: 90%;
 	}
 	.hero-img img {
