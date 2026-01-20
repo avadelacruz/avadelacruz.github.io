@@ -179,20 +179,22 @@ body {
 	}
 }
 
+
+/* mobile */
 @media only screen and (max-width: 600px) {
 	.hero-flexbox {
 		flex-direction: column-reverse;
 	}
 	.hero-content {
-		width: 90%;
+		width: 85%;
 	}
 	.hero-img img {
 		margin-top: 60px;
 		max-width: 225px;
 	}
 	.hero-title h1 {
-		font-size: 48px;
-		margin-top: 48px;
+		font-size: 36px;
+		margin-top: 36px;
 	}
 	.hero-description h2 {
 		font-size: 18px;
@@ -255,6 +257,7 @@ body {
     0 0 10px rgba(200, 200, 200, 0.1); 
 }
 
+/* mobile */
 @media only screen and (max-width: 600px) {
 	.catchphrase {
 		font-size: 16px;
@@ -337,6 +340,7 @@ body {
 	padding-left: 10px;
 }
 
+/* mobile */
 @media only screen and (max-width: 600px) {
 	.awards-and-honors .flex-box {
 		flex-direction: column;
