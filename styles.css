@@ -1,7 +1,7 @@
 body {
 	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Arial, sans-serif;
 	background-color: #f6f5f4;
-	margin: 0;
+	margin: 0 auto;
 }
 
 /* 	hero content						 */
@@ -226,11 +226,7 @@ body {
 		width: 82.5%;
 	}
 }
-@media only screen and (max-width: 480px) {
-	.main-content {
-		width: 85%;
-	}
-}
+
 
 .about {
 	color: #231f20;
@@ -285,9 +281,9 @@ body {
 	}
 }
 
-.about-intro-text {
+/* .about-intro-text {
 	padding-right: 25px;
-}
+} */
 
 .main-subheading {
 	text-transform: uppercase;
