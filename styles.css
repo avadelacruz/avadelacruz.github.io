@@ -180,33 +180,27 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+	.hero-flexbox {
+		flex-direction: column-reverse;
+	}
 	.hero-content {
 		width: 90%;
 	}
 	.hero-img img {
+		margin-top: 60px;
 		max-width: 225px;
 	}
 	.hero-title h1 {
-		font-size: 36px;
+		font-size: 48px;
+		margin-top: 48px;
 	}
 	.hero-description h2 {
-		font-size: 16px;
+		font-size: 18px;
 		margin: 5px 0;
 	}
 }
 
-@media only screen and (max-width: 480px) {
-	.hero-img img {
-		max-width: 225px;
-	}
-	.hero-title h1 {
-		font-size: 36px;
-	}
-	.hero-description h2 {
-		font-size: 16px;
-		/* line-height: 28px; */
-	}
-}
+
 
 /* 	main content						 */
 
