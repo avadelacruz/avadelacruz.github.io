@@ -1,5 +1,6 @@
 body {
-	font-family: "Inter", sans-serif;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Arial, sans-serif;
+	background-color: #f6f5f4;
 	margin: 0;
 }
 
@@ -9,8 +10,7 @@ body {
 	height: 100vh;
 	min-height: 800px;
 	margin: 0;
-	background-color: #2f3b2f;
-	color: white;
+	color: rgb(10, 10, 10);
 }
 .hero-content {
 	width: 80%;
@@ -42,16 +42,16 @@ body {
 	border-radius: 5px;
 }
 .hero-title h1 {
-	color: white;
+	color: rgb(10, 10, 10);
 	font-size: 60px;
 	text-align: left;
 	/* margin: 0px auto 25px auto; */
 	line-height: 15px;
 }
 .hero-title h2 {
-	color: #d3d3d3;
+	color: rgb(10, 10, 10);
 	font-size: 32px;
-	font-weight: lighter;
+	font-weight: 100;
 	font-style: italic;
 	text-align: left;
 	/* margin: 0px auto 25px auto; */
@@ -59,10 +59,10 @@ body {
 }
 
 .hero-description h2 {
-	color: white;
+	color: rgb(10, 10, 10);
 	font-size: 24px;
 	margin: 10px 0;
-	font-weight: normal;
+	font-weight: 200;
 	text-align: left;
 	padding-left: 5px;
 }
@@ -207,7 +207,7 @@ body {
 
 .main {
 	min-height: 100vh;
-	background-color: white;
+	background-color: #f6f5f4;
 }
 
 .main-content {
@@ -238,7 +238,7 @@ body {
 }
 
 .about a {
-	color: #607657;
+	color: #0075de;
 	text-decoration: none;
 }
 
@@ -247,19 +247,24 @@ body {
 }
 
 .catchphrase {
-	background-color: #607657;
-	padding: 20px;
-	line-height: 45px;
+	background-color: rgb(250, 250, 250);
+	padding: 10px 30px;
+	line-height: 50px;
 	margin: 0 auto;
-	color: #ffffff;
-	font-size: 32px;
+	color: rgb(10, 10, 10);
+	font-size: 24px;
+	border-radius: 10px;
+	font-weight: 400;
+	text-wrap: pretty;
+  	box-shadow: 
+    0 0 10px rgba(200, 200, 200, 0.1); 
 }
 
 @media only screen and (max-width: 600px) {
 	.catchphrase {
 		font-size: 24px;
 		margin-bottom: 50px;
-
+		line-height: 40px;
 	}
 }
 
@@ -267,7 +272,6 @@ body {
 .about-intro-flexbox {
 	display: flex;
 	flex-direction: row;
-	margin-top: 25px;
 }
 .ava-portrait {
 	max-width: 375px;
