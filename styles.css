@@ -262,7 +262,7 @@ body {
 @media only screen and (max-width: 600px) {
 	.catchphrase {
 		font-size: 16px;
-		margin-top: 50px;
+		margin-top: 25px;
 		line-height: 30px;
 	}
 }
